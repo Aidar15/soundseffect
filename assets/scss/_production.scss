@@ -1,0 +1,115 @@
+.production {
+    background-color: #FAFAFA;
+    height: 100%;
+    &__wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    &__header {
+        display: block;
+        text-align: center;
+        padding-top: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 31px;
+        letter-spacing: -0.05em;
+    }
+
+    &__list {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list img {
+        margin: 0 17px 40px 17px;
+        @media(max-width: 662px) {
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: $screensz2) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__list img:last-child {
+        @media(max-width: 663px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__list .dudperfect {
+        width: 40px;
+        height: 40px;
+
+        @media (min-width: $screensz2) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__list .pewdiepie {
+        width: 40px;
+        height: 40px;
+
+        @media (min-width: $screensz2) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__list .mrbeast {
+        width: 63px;
+        height: 44px;
+
+        @media (min-width: $screensz2) {
+            width: 77px;
+            height: 54px;
+        }
+    }
+
+    &__list .wbrem {
+        width: 40px;
+        height: 50px;
+
+        @media (min-width: $screensz2) {
+            width: 50px;
+            height: 62px;
+        }
+    }
+
+    &__list .netflix {
+        width: 80px;
+        height: 21px;
+
+        @media (min-width: $screensz2) {
+            width: 94px;
+            height: 25px;
+        }
+    }
+
+    &__list .pixar {
+        width: 90px;
+        height: 17px;
+
+        @media (min-width: $screensz2) {
+            width: 130px;
+            height: 25px;
+        }
+    }
+
+    &__list .picky {
+        width: 40px;
+        height: 40px;
+
+        @media (min-width: $screensz2) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

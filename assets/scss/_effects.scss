@@ -1,0 +1,269 @@
+.effects {
+    &__wrapper {
+        position: relative;
+        max-width: 100%;
+        width: 1044px;
+        margin: 0 auto;
+        padding: 0 17px;
+        box-sizing: border-box;
+
+        @media(min-width: $screensz1) and (max-width: $screensz2) {
+            width: 648px;
+            padding: 0;
+        }
+
+        @media (min-width: $screensz2) {
+            padding: 0;
+        }
+    }
+
+    &__title {
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        margin-top: 50px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            line-height: 38px;
+            font-size: 24px;
+        }
+
+        @media (min-width: $screensz2) {
+            line-height: 45px;
+            font-size: 28px;
+        }
+    }
+
+    &__categories {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 17px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__list li:nth-child(4),
+    &__list li:nth-child(5),
+    &__list li:nth-child(6) {
+        display: none;
+
+        @media (min-width: $screensz1) {
+            display: block;
+        }
+    }
+
+    &__list li {
+        margin-right: 12px;
+        @media(min-width: $screensz1) {
+            margin-right: 28px;
+        }
+    }
+
+    &__list li a {
+        color: #4C526A;
+        letter-spacing: -0.05em;
+        @media (min-width: $screensz2) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    &__list li a.active {
+        color: #020D37;
+        border-bottom: 2px solid #020D37;
+        border-radius: 1px;
+    }
+
+    &__filter {
+        display: flex;
+        width: 34px;
+        height: 36px;
+        background-color: #F1F1F1;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 101px;
+            height: 40px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 126px;
+            height: 40px;
+        }
+    }
+
+    &__filter-name {
+        display: none;
+        letter-spacing: -0.05em;
+        color: #4C526A;
+
+        @media(min-width: $screensz1) and (max-width: $screensz2) {
+            display: block;
+            margin-right: 16px;
+        }
+
+        @media (min-width: $screensz2) {
+            display: block;
+            font-size: 16px;
+            margin-right: 26px;
+        }
+    }
+
+    &__filter-image {
+        cursor: pointer;
+    }
+    
+    &__examples {
+        margin-top: 17px;
+
+        @media (min-width: $screensz2) {
+            margin-top: 20px;
+        }
+    }
+
+    &__seeall {
+        display: block;
+        color: #0432DF;
+        letter-spacing: -0.05em;
+        text-decoration: underline;
+        margin-top: 16px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            margin-top: 20px;
+        }
+
+        @media(min-width: $screensz2) {
+            letter-spacing: -0.01em;
+            margin-top: 20px;
+        }
+    }
+}
+
+.table {
+    &__body {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    &__row {
+        height: 60px;
+        border-bottom: 1px solid #EEE;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            height: 58px;
+        }
+
+        @media (min-width: $screensz2) {
+            height: 68px;
+        }
+    }
+
+    &__row td:first-child {
+        width: 34px;
+        padding-right: 14px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            padding: 0 28px 0 21px;
+        }
+
+        @media (min-width: $screensz2) {
+            padding: 0 47px 0 20px;
+        }
+    }
+
+    &__row td:nth-child(6),
+    &__row td:last-child  {
+        width: 36px;
+        padding: 0;
+        @media (min-width: $screensz1) {
+            padding-right: 20px;
+        }
+    }
+
+    &__row td:last-child {
+        @media (min-width: $screensz2) {
+            padding-right: 0;
+        }
+    }
+
+    &__row td:nth-child(6) {
+        @media (max-width: $screensz1) {
+            padding-right: 10px;
+        }
+    }
+
+    &__row td:nth-child(5) {
+        display: none;
+        @media(min-width: $screensz1) {
+            display: table-cell;
+            width: 36px;
+            padding-right: 20px;
+        }
+    }
+
+    &__sound-name {
+        color: #020D37;
+        line-height: 19px;
+        letter-spacing: -0.05em;
+        padding: 0;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 129px;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 226px;
+            font-size: 16px;
+        }
+    }
+
+    &__sound-name span {
+        font-size: 12px;
+        color: #4C526A;
+        font-weight: 400;
+        line-height: 21px;
+        margin-top: 2px;
+    }
+
+    &__sound-description {
+        display: none;
+
+        @media (min-width: $screensz2) {
+            display: table-cell;
+            text-align: left;
+            width: 241px;
+            color: #4C526A;
+            font-size: 16px;
+            letter-spacing: -0.05em;
+            line-height: 22px;
+        }
+    }
+
+    &__sound-genre {
+        display: none;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            display: table-cell;
+            text-align: center;
+            color: #4C526A;
+            letter-spacing: -0.05em;
+        }
+
+        @media (min-width: $screensz2) {
+            display: table-cell;
+            text-align: center;
+            color: #4C526A;
+            font-size: 16px;
+            letter-spacing: -0.05em;
+        }
+    }
+}

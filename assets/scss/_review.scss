@@ -1,0 +1,114 @@
+.review {
+
+    &__wrapper {
+        position: relative;
+        width: 975px;
+        max-width: 100%;
+        height: 625px;
+        margin: 0 auto;
+        padding: 0 16px;
+        box-sizing: border-box;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 648px;
+        }
+    }
+
+    &__header {
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 600;
+        color: #F59E00;
+        margin-top: 50px;
+    }
+
+    &__description {
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #020D37;
+        margin-top: 20px;
+    }
+
+    &__list {
+        margin-top: 40px;
+    }
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 11px 30px 11px;
+    border: 1px solid #EEE;
+    border-radius: 8px;
+    box-sizing: border-box;
+    
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    &__description {
+        text-align: center;
+        color: #4C526A;
+        margin-top: 10px;
+    }
+
+    &__image {
+        width: 94px;
+        height: 95px;
+        margin-top: 25px;
+    }
+
+    &__person {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 31px;
+        letter-spacing: -0.05em;
+    }
+
+    &__person-profession {
+        line-height: 24px;
+        color: #ACAFB8;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 333px;
+}
+
+.swiper-pagination {
+    top: 480px;
+    height: 50px;
+}
+
+.tablet {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+
+    @media (min-width: $screensz1) {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.desktop {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+
+    @media (min-width: $screensz2) {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

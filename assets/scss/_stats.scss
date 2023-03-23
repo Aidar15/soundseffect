@@ -1,0 +1,172 @@
+.stats {
+    margin-top: 90px;
+
+    @media (min-width: $screensz1) and (max-width: $screensz2) {
+        margin-top: 80px;
+    }
+
+    @media (min-width: $screensz2) {
+        margin-top: 120px;
+    }
+
+    &__wrapper {
+        @media (min-width: $screensz2) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 100%;
+            width: 1042px;
+            margin: 0 auto;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 36px;
+        margin: 47px auto 0 auto;
+        
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 100%;
+            width: 602px;
+            padding: 0px;
+        }
+
+        @media (min-width: $screensz2) {
+            margin: 0;
+            width: 602px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+
+    &__item {
+        margin-bottom: 30px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 246px;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 246px;
+            margin-bottom: 0px;
+        }
+    }
+
+    &__item:nth-child(2) {
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            order: 3;
+            margin-bottom: 60px;
+        }
+
+        @media (min-width: $screensz2) {
+            order: 3;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__item:nth-child(3) {
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            order: 3;
+            margin-bottom: 0;
+        }
+
+        @media (min-width: $screensz2) {
+            order: 3;
+            margin-bottom: 0;
+        }
+    }
+
+    &__item:last-child {
+        margin-bottom: 50px;
+
+        @media (min-width: $screensz1) {
+            order: 1;
+        }
+    }
+
+    &__item-image {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 21px;
+    }
+
+    &__item-header {
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        color: #020D37;
+        margin-bottom: 4px;
+
+        @media (min-width: $screensz1) {
+            font-size: 18px;
+            line-height: 31px;
+            letter-spacing: -0.05em;
+        }
+    }
+
+    &__item-description {
+        color: #4C526A;
+    }
+}
+
+.stats-banner {
+    &__wrapper {
+        max-width: 100%;
+        width: 466px;
+        margin: 0 auto;
+
+        @media (min-width: $screensz2) {
+            width: 337px;
+            margin: 0;
+        }
+    }
+
+    &__header {
+        font-family: 'Poppins';
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 600;
+        color: #F59E00;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media (min-width: $screensz2) {
+            text-align: left;
+        }
+    }
+
+    &__description {
+        font-family: 'Poppins';
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        color: #020D37;
+        text-align: center;
+        padding: 0 27px;
+        margin-top: 17px;
+        letter-spacing: -0.02em;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            font-size: 24px;
+            line-height: 38px;
+            padding: 0;
+        }
+
+        @media (min-width: $screensz2) {
+            font-size: 28px;
+            line-height: 45px;
+            text-align: left;
+            padding: 0;
+        }
+    }
+}

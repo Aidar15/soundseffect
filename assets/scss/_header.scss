@@ -1,0 +1,253 @@
+.background-container {
+    background-image: url('../img/background-mobile.png');
+    background-size: cover;
+    width: 100%;
+    height: 620px;
+    background-color: rgb(4, 4, 45);
+
+    @media (min-width: $screensz1) and (max-width: $screensz2) {
+        background-image: url('../img/background-tablet.png');
+        height: 667px;
+    }
+
+    @media (min-width: $screensz2) {
+        background-image: url('../img/background-desktop.png');
+        height: 650px;
+    }
+}
+
+.page-header {
+    @media (max-width: $screensz2) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    &__wrapper {
+        max-width: 100%;
+        width: 1044px;
+        height: 69px;
+        box-sizing: border-box;
+        padding: 0 28px 0 16px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        @media (max-width: $screensz1) {
+            background-color: #000322;
+        }
+
+        @media(min-width: $screensz1) and (max-width: $screensz2) {
+            padding: 0 60px;
+            background-color: #000322;
+            width: 100%;
+            
+        }
+
+        @media(min-width: $screensz2) {
+            height: 84px;
+            padding: 0;
+        }
+    }
+
+    &__logo-image {
+        width: 113px;
+        height: 17px;
+    }
+
+    &__right-side {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        display: none;
+        @media (max-width: $screensz2) {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            transform: translate(-100%, 0px);
+            background-color: #000322;
+            padding: 80px 0px;
+            transition: transform 0.3s ease 0s;
+            overflow: auto;
+            z-index: -1;
+        }
+
+        @media (min-width: $screensz2) {
+            display: block;
+            margin-right: 53px;
+        }
+    }
+
+    &__nav._active {
+        transform: translate(0px, 0px);
+        transition: transform 0.3s ease 0s;
+    }
+
+    &__nav::before {
+        @media (max-width: $screensz2) {
+            content: "";
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 70px;
+            z-index: 50;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        @media (max-width: $screensz2) {
+            flex-direction: column;
+        }
+    }
+
+    &__list li {
+        margin-right: 36px;
+
+        @media (max-width: $screensz2) {
+            padding: 20px 15px;
+            margin-right: 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &__list li:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        font-family: "Poppins";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff;
+        opacity: 0.6;
+
+        @media (max-width: $screensz2) {
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    }
+
+    &__link:hover {
+        opacity: 1;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &__login {
+        display: none;
+
+        @media (min-width: $screensz2) {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:  #0432DF;
+            border-radius: 8px;
+            color: #fff;
+            font-family: "Poppins";
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            transition: all 0.3s ease 0s;
+        }
+    }
+
+    &__login:hover {
+        background-color: #0029C2;
+        box-shadow: 0px 10px 12px rgba(251, 251, 251, 0.12);
+        transition: all 0.3s ease 0s;
+    }
+
+    &__burger {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 3;
+
+        @media (min-width: $screensz2) {
+            display: none;
+        }
+    }
+
+    &__burger span {
+        position: absolute;
+        background-color: #EEE;
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        left: 25%;
+        top: 23px;
+        border-radius: 3px;
+        transition: all 0.3s ease 0s;
+
+        @media (min-width: $screensz1) {
+            width: 30px;
+            height: 2.4px;
+            left: 20%;
+        }
+    }
+
+    &__burger::before,
+    &__burger::after {
+        content: "";
+        background-color: #EEE;
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        border-radius: 3px;
+        left: 25%;
+        transition: all 0.3s ease 0s;
+
+        @media (min-width: $screensz1) {
+            width: 30px;
+            height: 2.4px;
+            left: 20%;
+        }
+    }
+
+    &__burger::before {
+        top: 15.6px;
+
+        @media (min-width: $screensz1) {
+            top: 14px;
+        }
+    }
+
+    &__burger::after {
+        bottom: 16px;
+
+        @media (min-width: $screensz1) {
+            bottom: 14px;
+        }
+    }
+
+    &__burger._active span {
+        transform: scale(0) translate(0px, -50%);
+    }
+
+    &__burger._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -70%);
+    }
+
+    &__burger._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 70%);
+
+    }
+}

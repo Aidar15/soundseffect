@@ -1,0 +1,184 @@
+.categories {
+    margin-top: 80px;
+
+    @media (min-width: $screensz1) and (max-width: $screensz2) {
+        margin-top: 90px;
+    }
+
+    @media (min-width: $screensz2) {
+        margin-top: 120px;
+    }
+
+    &__wrapper {
+        max-width: 100%;
+        width: 1042px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 16px;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 648px;
+            padding: 0;
+        }
+
+        @media (min-width: $screensz2) {
+            padding: 0;
+        }
+    }
+
+    &__header {
+        font-size: 20px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        line-height: 30px;
+        color: #020D37;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            font-size: 24px;
+            line-height: 38px;
+        }
+
+        @media (min-width: $screensz2) {
+            font-size: 28px;
+            line-height: 45px;
+        }
+    }
+
+    &__list {
+        margin-top: 20px;
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(139px, 139px));
+        justify-content: center;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            column-gap: 16px;
+            row-gap: 12px;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+        }
+
+        @media (min-width: $screensz2) {
+            margin-top: 23px;
+            column-gap: 20px;
+            row-gap: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(157px, 157px));
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: #EEE;
+        font-weight: 600;
+        line-height: 22px;
+        width: 139px;
+        height: 70px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 150px;
+            height: 90px;
+            font-size: 18px;
+            line-height: 31px;
+            letter-spacing: -0.05em;
+        }
+
+        @media (min-width: $screensz2) {
+            width: 157px;
+            height: 117px;
+            font-size: 18px;
+            line-height: 31px;
+            letter-spacing: -0.05em;
+        }
+    }
+
+    &__item:hover {
+        @media (min-width: $screensz2) {
+            text-decoration: underline;
+            opacity: 0.7;
+            transition: all 0.3s ease 0s; 
+        }
+    }
+
+    &__item-musical {
+        background-image: url('../img/category/musical.jpg');
+        background-position: center;
+    }
+
+    &__item-industrial {
+        background-image: url('../img/category/industrial.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__item-movie {
+        background-image: url('../img/category/movie.jpg');
+        background-position: center;
+    }
+    &__item-animal {
+        background-image: url('../img/category/animal.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    &__item-vehicles {
+        background-image: url('../img/category/vehicles.jpg');
+        background-position: center;
+    }
+    &__item-designs {
+        background-image: url('../img/category/design.jpg');
+        background-position: center;
+    }
+    &__item-people {
+        background-image: url('../img/category/people.jpg');
+        background-position: center;
+    }
+    &__item-emergency {
+        background-image: url('../img/category/emergency.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    &__item-cartoon {
+        background-image: url('../img/category/cartoon.jpg');
+        background-position: center;
+    }
+    &__item-horror {
+        background-image: url('../img/category/horror.jpg');
+        background-position: center;
+    }
+    &__item-bell {
+        background-image: url('../img/category/bell.jpg');
+        background-position: center;
+    }
+    &__item-nature {
+        background-image: url('../img/category/nature.jpg');
+        background-position: center;
+    }
+
+    &__all {
+        display: block;
+        font-family: 'Poppins';
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #0432DF;
+        letter-spacing: -0.01em;
+        text-decoration: underline;
+        margin-top: 16px;
+
+        @media (min-width: $screensz2) {
+            margin-top: 20px;
+        }
+    }
+
+    &__all:hover {
+        @media(min-width: $screensz2) {
+            color: #0029C2;
+        }
+    }
+}

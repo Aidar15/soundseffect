@@ -1,0 +1,146 @@
+.intro {
+    &__wrapper {
+        max-width: 100%;
+        width: 838px;
+        margin: 56px auto 0 auto;
+        padding: 0 15.5px;
+        box-sizing: border-box;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            width: 650px;
+            margin: 0 auto 0 auto;
+            padding-top: 168px;
+        }
+
+        @media (min-width: $screensz2) {
+            padding: 0;
+            width: 840px;
+            margin: 95px auto 0 auto;
+        }
+    }
+
+    &__header {
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        color: #eee;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        @media (max-width: $screensz1) {
+            padding-top: 56px;
+        }
+
+        @media (min-width: $screensz1) {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 53px;
+        }
+    }
+
+    &__description {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 22px;
+        color: #ACAFB8;
+        text-align: center;
+        margin: 16px 0 50px 0;
+
+        @media (min-width: $screensz2) {
+            margin: 132px 0 50px 0;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 34px;
+            letter-spacing: -0.05em;
+        }
+    }
+
+    &__form-body {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__form-body input {
+        width: 100%;
+        height: 44px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        outline: none;
+        padding: 8px 10px 7px 48px;
+        background-color: #eee;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            height: 60px;
+            padding: 17px 10px 15px 54px;
+        }
+
+        @media (min-width: $screensz2) {
+            height: 60px;
+            width: 600px;
+        }
+    }
+
+    &__form-body button {
+        position: absolute;
+        top: 10px;
+        left: 14px;
+        width: 24px;
+        height: 24px;
+        border: none;
+        background-color: #eee;
+        cursor: pointer;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            top: 19px;
+        }
+
+        @media (min-width: $screensz2) {
+            left: 130px;
+            top: 19px;
+        }
+    }
+
+    &__form-body button::before {
+        content: "\f002";
+        font-family: FontAwesome;
+        font-size: 18px;
+        color: #4F5261;
+    }
+
+    &__form-description {
+        margin-top: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.05em;
+        color:#eee;
+
+        @media (min-width: $screensz1) and (max-width: $screensz2) {
+            margin-top: 10px;
+        }
+
+        @media (min-width: $screensz2) {
+            margin-top: 10px;
+            margin: 10px 0 0 119px;
+        }
+    }
+
+    &__footer {
+        margin: 50px auto 0 auto;
+        line-height: 24px;
+        color: #eee;
+        text-align: center;
+    }
+
+    &__footer a {
+        color: #eee;
+        text-decoration: underline;
+    }
+}
+
+::-webkit-input-placeholder { color:#4C526A; font-family: "Inter"; font-size: 16px; font-weight: 500;}
+::-moz-placeholder { color:#4C526A; font-family: "Inter"; font-size: 16px; font-weight: 500;}
+:-ms-input-placeholder { color:#4C526A; font-family: "Inter"; font-size: 16px; font-weight: 500;}
+:-moz-placeholder { color:#4C526A; font-family: "Inter"; font-size: 16px; font-weight: 500;}
